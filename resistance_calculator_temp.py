@@ -16,7 +16,7 @@ def calculate_base_resistance(final_resistance, temperature_affect, temperature_
     print(base_resistance)
 
 def get_user_calculation():
-    print("Put in a input but skip if not known")
+    print("Put in an input but skip if not known")
     try:
         base_resistance = float(input("Base resistance: ") or 0.0)
         final_resistance = float(input("Final resistance: ") or 0.0)
@@ -29,7 +29,7 @@ def get_user_calculation():
             raise ValueError
 
     except ValueError:
-        print("Invalid input or input not in range")
+        print("Input not in range")
         return
 
     if user_input == 1:
